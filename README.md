@@ -1,2 +1,1 @@
-# latihan
-latihan coding
+# this my portofolio
