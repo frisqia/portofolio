@@ -14,20 +14,20 @@ const config: Config = {
       },
       keyframes: {
         fadeIn: {
-          '0%': { opacity: '0', transform: 'translateY(-20px)' }, // Masukkan dari atas
-          '100%': { opacity: '1', transform: 'translateY(0)' }, // Berhenti di tempat
+          '0%': { opacity: '0', transform: 'translateY(-40px)' },
+          '100%': { opacity: '1', transform: 'translateY(0)' }, 
         },
-        fadeInTwo: { // Perbaiki penamaan di sini
+        fadeInTwo: { 
           '0%': { opacity: '0' },
           '100%': { opacity: '1' },
         },
       },
       animation: {
-        fadeIn: 'fadeIn 1s ease-in-out', // Durasi animasi
-        fadeInTwo: 'fadeInTwo 1s ease-in-out', // Perbaiki penamaan di sini
+        fadeIn: 'fadeIn 1s ease-in-out', 
+        fadeInTwo: 'fadeInTwo 1s ease-in-out',
       },
       fontFamily: {
-        'lilita': ['Lilita One', 'cursive'], // Definisikan font kustom Anda di sini
+        'lilita': ['Lilita One', 'cursive'], 
       },
     },
   },
