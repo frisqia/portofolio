@@ -13,6 +13,8 @@ import Head from "next/head";
 
 import AbaoutMe from "./biodata/page";
 import MyPortofolio from "./project/web-project/page";
+import Form from "./form/page";
+
 
 interface ImageType {
   src: StaticImageData;
@@ -81,7 +83,7 @@ export default function Home() {
       <div className="p-20 bg-black">
         <h1 className="text-2xl md:text-4xl xl:text-5xl text-red-700 animate-fadeIn">Hello! I'm Frisqia Fatmalaningsih</h1>
         <p className="text-sm md:text-2xl lg:text-3xl text-white animate-fadeInTwo">
-          I'm Junior Front-end Developer, user interfaces and web application
+        I'm a high school graduate who is interested in software engineering, especially in the field of Front-end Developer, user interfaces and web application
         </p>
         <Link href="https://docs.google.com/document/d/1nEDnag8t90e_RDDduG1zx_XXOUD-pLVCeEp7bp-xDbc/edit?usp=sharing" target="_blank" rel="noopener noreferrer">
           <button className="mt-4 p-2 bg-red-700 text-white rounded hover:bg-red-500">
@@ -116,7 +118,7 @@ export default function Home() {
       
       <MyPortofolio/>
       <AbaoutMe/>
-
+      <Form/>
       <div className="p-20">
         <h3 className="text-2xl md:text-4xl xl:text-5xl">Find me!</h3>
         <div className="flex gap-2">

@@ -1,5 +1,10 @@
 'use client'
 import React from "react"
+import Image from "next/image"
+import PDC from "../web-project/PDC-Background.png"
+import PDCOne from "../web-project/PDC-Recycle.png"
+import PDCTheme from "../web-project/pdc-judul.png"
+import Link from "next/link"
 
 export default function MyPortofolio(){
     return(
@@ -14,25 +19,39 @@ export default function MyPortofolio(){
         </p>
         <br/>
         <h2 className="font-bold text-2xl">Website</h2>
-
+        <div className="p-5">
+        <p className="flex justify-center font-bold">PDC Recycle</p>
+        <Link href='https://docs.google.com/presentation/d/1SDYUIc_tX5h5iWNASJA8MH6MWc6OhWnHiRzCg2A1flg/edit#slide=id.p' className="flex justify-center">Detail</Link>
+        </div>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-        
           {[
-            "web 1",
-            "web 2",
-            "web 3",
+            {
+              name: "Project 1",
+              img: PDCTheme,
+            },
+            {
+              name: "Project 2",
+              img: PDC,
+            },
+            {
+              name: "Project 3",
+              img: PDCOne,
+            },
+            
           ].map((item, index) => (
-            <div key={index} className="bg-white shadow-md rounded-lg overflow-hidden transition-transform duration-500 hover:scale-105">
-              <img src="https://via.placeholder.com/300" alt={item} className="w-full h-48 object-cover" />
-              <div className="p-4">
-                <h2 className="text-lg font-bold mb-2">{item}</h2>
-                <p className="text-gray-700">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-              </div>
+            <div key={index} className="bg-white shadow-md  overflow-hidden transition-transform duration-500 hover:scale-105">
+              <Image
+                src={item.img}
+                alt={item.name}
+                className="w-full h-50 object-cover"
+                width={500}
+                height={300}
+              />
             </div>
           ))}
         </div>
         <br/>
-        <h2 className="font-bold text-2xl">Tools</h2>
+        <h2 className="font-bold text-2xl">Skill & Tools</h2>
         <div className="flex flex-wrap justify-center">
         
         <svg viewBox="0 0 128 128" className="w-[70px] h-[90px] mr-2 fill-current text-white">

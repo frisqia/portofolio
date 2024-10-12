@@ -119,24 +119,24 @@ export default function AboutMe() {
   <table className="min-w-full">
     <thead>
       <tr >
-        <th className="py-2 px-4 text-left font-semibold text-gray-700">Company</th>
+        <th className="py-2 px-4 text-xl text-left font-semibold text-gray-700">Company</th>
       </tr>
     </thead>
     <tbody>
       <tr >
-        <td className="py-3 px-4">PT. Metiska Farma</td>
+        <td className="py-3 px-4 text-lg">PT. Metiska Farma</td>
         <td className="py-3 px-4 text-end">August 2021 - June 2024</td>
       </tr>
       <tr >
-        <td className="py-3 px-4">PT. Palugada Informatika</td>
+        <td className="py-3 px-4 text-lg">PT. Palugada Informatika</td>
         <td className="py-3 px-4 text-end">March 2020 - August 2021</td>
       </tr>
       <tr >
-        <td className="py-3 px-4">PT. Haengsung Raya Indonesia</td>
+        <td className="py-3 px-4 text-xl">PT. Haengsung Raya Indonesia</td>
         <td className="py-3 px-4 text-end">April 2018 - October 2018</td>
       </tr>
       <tr >
-        <td className="py-3 px-4">PT. Tempo Scan Pacific, tbk</td>
+        <td className="py-3 px-4 text-xl">PT. Tempo Scan Pacific, tbk</td>
         <td className="py-3 px-4 text-end">October 2017 - March 2018</td>
       </tr>
     </tbody>
