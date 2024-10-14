@@ -24,11 +24,11 @@ export default function AboutMe() {
               alt="School"
               width={500}
               height={300}
-              className="filter grayscale cursor-pointer hover:filter-none"
+              className="filter grayscale cursor-pointer hover:filter-none animate-slideRight"
               onClick={() => setShowSchoolDetail(!showSchoolDetail)} // Toggle untuk detail School
             />
             <h2 className="text-xl font-bold">SMA Bina Pendidikan</h2>
-            <p>Jurusan: Ilmu Pengetahuan Alam (Biologi)</p>
+            <p>Major: Ilmu Pengetahuan Alam (Biologi)</p>
             <p>April, 2015 –  July 2017</p>
             {/* Detail SMA yang muncul jika gambar diklik */}
             {showSchoolDetail && (
@@ -73,7 +73,7 @@ export default function AboutMe() {
               alt="RevoU"
               width={500}
               height={200}
-              className="filter grayscale cursor-pointer hover:filter-none"
+              className="filter grayscale cursor-pointer hover:filter-none animate-slideLeft"
               onClick={() => setShowRevoUDetail(!showRevoUDetail)} // Toggle untuk detail RevoU
             />
             <h2 className="text-xl font-bold">RevoU Program</h2>
