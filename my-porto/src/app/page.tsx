@@ -95,7 +95,7 @@ export default function Home() {
         <p className="text-sm md:text-2xl lg:text-3xl text-white animate-fadeInTwo">
         I'm a high school graduate who is interested in software engineering, especially in the field of Front-end Developer, user interfaces and web application
         </p>
-        <Link href="https://docs.google.com/document/d/1nEDnag8t90e_RDDduG1zx_XXOUD-pLVCeEp7bp-xDbc/edit?usp=sharing" target="_blank" rel="noopener noreferrer">
+        <Link href="https://docs.google.com/document/d/1dUH5zVyeLzPVeaTbayJYYZBNpC0kJJzoLY5Px6m7EMA/edit?usp=sharing" target="_blank" rel="noopener noreferrer">
           <button className="mt-4 p-2 bg-pink-400/50 shadow-xl shadow-pink-300/50 text-white rounded hover:bg-pink-300 hover:text-black">
             Check My Cv
           </button>

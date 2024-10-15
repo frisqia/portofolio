@@ -67,6 +67,7 @@ const config: Config = {
       },
       fontFamily: {
         'lilita': ['Lilita One', 'cursive'], 
+        'Qwitcher':['Qwitcher Grypen', 'cursive']
       },
     },
   },
