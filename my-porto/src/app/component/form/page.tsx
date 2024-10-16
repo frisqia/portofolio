@@ -44,11 +44,11 @@ export default function Form() {
   });
 
   return (
-    <div className="p-8 md:p-20 bg-gray-100 rounded-lg shadow-lg">
-      <h1 className="text-4xl font-lilita mb-4 text-center">Any Question?</h1>
+    <div className="p-10 md:p-15 lg:p-20 bg-gray-100 rounded-lg shadow-lg">
+      <h1 className="text-2xl md:text-3xl lg:text-4xl font-lilita mb-4 text-center">Any Question?</h1>
       <div className="flex flex-col md:flex-row">
         <div className="flex-1 mb-6 md:mr-4">
-          <p className="text-lg text-gray-700">
+          <p className="text-xs md:text-sm lg:text-base text-gray-700">
             I'm glad you've visited my personal portfolio website! If you have any questions, suggestions, or would like to collaborate, please feel free to contact me through this form. I will endeavor to reply to your message as soon as possible.
           </p>
         </div>

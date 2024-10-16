@@ -1,78 +1,65 @@
-'use client'
-import React, { useEffect, useState } from "react"
-import Image from "next/image"
-import PDC from "../web-project/PDC-Background.png"
-import PDCOne from "../web-project/PDC-Recycle.png"
-import PDCTheme from "../web-project/pdc-judul.png"
-import Link from "next/link"
+'use client';
+import React, { useEffect, useState } from "react";
+import WebProject from "./webProject";
+import AboutMe from "@/app/biodata/page";
 
-
-
-export default function MyPortofolio(){
+export default function MyPortofolio() {
   const [showSecondParagraph, setShowSecondParagraph] = useState(false);
   const [firstBlink, setFirstBlink] = useState(true);
   const [secondBlink, setSecondBlink] = useState(false);
+  const [activeSection, setActiveSection] = useState("project");
 
   useEffect(() => {
     const timer = setTimeout(() => {
       setFirstBlink(false);
       setShowSecondParagraph(true);
       setSecondBlink(true);
-    }, 4000); 
+    }, 4000);
 
-    return () => clearTimeout(timer); 
+    return () => clearTimeout(timer);
   }, []);
   
-    return(
-
-        <>
-        
-    
-        <div className="px-20 py-5 bg-black text-white">
-        <h1 className="text-2xl">My Portfolio</h1>
-        <p className="text-7xl font-lilita">Project</p>
-        <br/>
-        <p className="animate-pulseZoom">
-        This is my previous project and work. My portfolio covers several areas of programming languages, graphic design, code writing, digital marketing, and many more. It provides examples of work
-      
-          completed for clients and personal projects, offering insight into my skills and work style to help you in your upcoming endeavors.
+  return (
+    <>
+      <div className="flex flex-col justify-center items-center p-6 md:p-8 lg:p-10 bg-pink-500 text-white min-h-screen">
+        <h1 className="text-base md:text-xl lg:text-2xl">My Portfolio</h1>
+        <br />
+        <p className="text-xs md:text-sm lg:text-base text-center max-w-2xl">
+          This is my previous project and work. My portfolio covers several areas of programming languages, graphic design, code writing, digital marketing, and many more. It provides examples of work completed for clients and personal projects, offering insight into my skills and work style to help you in your upcoming endeavors.
         </p>
-  
-        <br/>
-        <h2 className="font-bold text-2xl">Website</h2>
-        <div className="p-5">
-        <p className="flex justify-center font-bold">PDC Recycle</p>
-        <Link href='https://docs.google.com/presentation/d/1SDYUIc_tX5h5iWNASJA8MH6MWc6OhWnHiRzCg2A1flg/edit#slide=id.p' className="flex justify-center"><u>Info Detail</u></Link>
-        </div>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-          {[
-            {
-              name: "Project 1",
-              img: PDCTheme,
-            },
-            {
-              name: "Project 2",
-              img: PDC,
-            },
-            {
-              name: "Project 3",
-              img: PDCOne,
-            },
-            
-          ].map((item, index) => (
-            <div key={index} className="bg-white shadow-md  overflow-hidden transition-transform duration-500 hover:scale-105">
-              <Image
-                src={item.img}
-                alt={item.name}
-                className="w-full h-50 object-cover"
-                width={500}
-                height={300}
-              />
-            </div>
+        
+        {/* Button Section */}
+        <div className="flex justify-end mt-6 space-x-6 w-full max-w-4xl">
+          {["project", "profile"].map((section) => (
+            <button
+              key={section}
+              className={`px-3 py-2 text-sm md:text-base lg:text-xl font-semibold rounded-md shadow-md ${
+                activeSection === section ? "bg-pink-600 shadow-lg" : "bg-pink-500 hover:bg-pink-600"
+              }`}
+              onClick={() => setActiveSection(section)}
+            >
+              {section.charAt(0).toUpperCase() + section.slice(1)}
+            </button>
           ))}
         </div>
-        <br/>
         
-      </div></>
-    )
+        {/* Content Section */}
+        <div className="p-6 mt-10 bg-black shadow-xl shadow-white rounded-lg shadow-xl w-full max-w-4xl">
+          {/* Conditional Rendering of Sections */}
+          {activeSection === "project" && (
+            <section id="project">
+              <WebProject />
+            </section>
+          )}
+
+          {activeSection === "profile" && (
+            <section id="profile">
+              
+              <AboutMe />
+            </section>
+          )}
+        </div>
+      </div>
+    </>
+  );
 }
