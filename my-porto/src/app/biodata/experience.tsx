@@ -2,7 +2,7 @@ import React, { useState } from "react";
 
 export default function MyExperience() {
   // State untuk menyimpan pengalaman yang dipilih
-  const [selectedExperience, setSelectedExperience] = useState<string | null>(null);
+  const [selectedExperience, setSelectedExperience] = useState<number | null>(null);
 
   // Data pengalaman kerja
   const experiences = [
@@ -56,44 +56,29 @@ export default function MyExperience() {
     },
   ];
 
-  // Handler untuk mengatur pengalaman yang dipilih
+ 
   const handleExperienceClick = (index: number) => {
-    const selected = experiences[index].position;
-    // Jika pengalaman yang sama diklik, set ke null (untuk menyembunyikan)
-    setSelectedExperience(selectedExperience === selected ? null : selected);
+    setSelectedExperience(selectedExperience === index ? null : index);
   };
 
   return (
     <div className="p-2 md:p-4 lg:p-6">
-      <p className="text-2xl font-bold font-poppins mb-5">Experience</p>
+
       <table className="min-w-full">
-        <thead>
-          <tr>
-            <th className="py-2 px-4 text-xl text-left font-semibold text-white">Company</th>
-            <th className="py-2 px-4 text-xl text-left font-semibold text-white">Period</th>
-          </tr>
-        </thead>
         <tbody>
           {experiences.map((exp, index) => (
-            <React.Fragment key={exp.position}>
+            <React.Fragment key={index}>
+              {/* Baris untuk Nama Company dan Period */}
               <tr onClick={() => handleExperienceClick(index)} style={{ cursor: "pointer" }}>
-                <td className="py-3 px-4 text-lg">{exp.company}</td>
-                <td className="py-3 px-4 text-lg">{exp.period}</td>
+                <td className="py-3 px-4 text-lg font-semibold text-left">{exp.company}<br /><span className="italic">{exp.position}</span></td>
+                <td className="py-3 px-4 text-lg font-semibold text-right">{exp.period}</td>
               </tr>
-              <tr>
-                <td colSpan={2} className="px-4 text-lg">
-                  <i>
-                    <u onClick={() => handleExperienceClick(index)} style={{ cursor: "pointer" }}>{exp.position}</u>
-                  </i>
-                </td>
-              </tr>
-              {selectedExperience === exp.position && (
+              
+              {/* Deskripsi pengalaman */}
+              {selectedExperience === index && (
                 <tr>
-                  <td colSpan={2} className="py-1 px-4">
-                    <ul
-                      className={`list-disc pl-5 text-gray-600 text-xs md:text-sm lg:text-base
-                      ${index % 2 === 0 ? "animate-slideLeft" : "animate-slideRight"}`}
-                    >
+                  <td colSpan={2} className="py-3 px-4 text-sm md:text-lg lg:text-xlanimate-fadeIn">
+                    <ul className="list-disc pl-5">
                       {exp.description.map((desc, idx) => (
                         <li key={idx}>{desc}</li>
                       ))}

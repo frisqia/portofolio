@@ -11,7 +11,7 @@ export default function AboutMe() {
 
   return (
     <>
-      <h1 className="text-3xl md:text-5xl lg:text-7xl font-lilita p-4">Profile</h1>
+      {/* <h1 className="text-3xl md:text-5xl lg:text-7xl font-lilita p-4">Profile</h1> */}
       
       <div className="flex flex-col items-center">
       {/* Navigation Tabs */}
@@ -31,7 +31,7 @@ export default function AboutMe() {
       </div>
 
       {/* Container for the content */}
-      <div className="p-10 mt-6 border-gray-100 rounded-lg shadow-md w-full max-w-4xl">
+      {/* <div className="p-10 mt-6 shadow-pink-200 rounded-lg shadow-md w-full max-w-6xl"> */}
         {/* Conditional Rendering of Sections */}
         {activeSection === "aboutme" && (
           <section id="aboutme">
@@ -56,11 +56,11 @@ export default function AboutMe() {
 
         {activeSection === "skill" && (
           <section id="skill">
-            <h2 className="text-3xl md:text-5xl lg:text-7xl font-lilita">Skills</h2>
+            <h2 className="  flex justify-center p-2 text-3xl md:text-5xl lg:text-7xl font-lilita">Skills</h2>
             <MySkill />
           </section>
         )}
-      </div>
+      {/* </div> */}
     </div></>
    
   );
