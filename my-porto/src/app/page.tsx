@@ -91,7 +91,7 @@ export default function Home() {
           rel="stylesheet"
           href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
         />
-
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
       </Head>
       <div className="justify-center items-center">
         {/* <Navbar/> */}
@@ -115,7 +115,7 @@ export default function Home() {
               </p>
               <ContactMe/>
               
-                <button className="animate-pulseZoom w-[70px] h-[28px] md:w-[85px] md:h-[31px] lg:w-[100px] lg:h-[35px] mt-4 p-2 bg-pink-500 text-xs md:text-sm lg:text-base shadow-xl shadow-pink-300/50 text-white rounded hover:bg-pink-300 hover:text-black">
+                <button className="animate-pulseZoom w-[70px] h-[28px] md:w-[85px] md:h-[31px] lg:w-[100px] lg:h-[35px] mt-4 p-2 bg-pink-500 text-xs md:text-sm lg:text-base  text-white rounded hover:bg-pink-600 ">
                 <Link
                 href="https://docs.google.com/document/d/1dUH5zVyeLzPVeaTbayJYYZBNpC0kJJzoLY5Px6m7EMA/edit?usp=sharing"
                 target="_blank"
