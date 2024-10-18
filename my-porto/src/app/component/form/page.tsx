@@ -1,9 +1,25 @@
-import React from "react";
+import React, { useState } from "react";
 import { useFormik } from 'formik';
 import * as Yup from 'yup';
 import emailjs, { EmailJSResponseStatus } from 'emailjs-com';
 
+// Definisikan tipe untuk props
+interface NotificationProps {
+  message: string;
+  onClose: () => void; // Fungsi yang tidak menerima argumen dan tidak mengembalikan apa pun
+}
+
+const Notification: React.FC<NotificationProps> = ({ message, onClose }) => {
+  return (
+    <div className="fixed bottom-0 left-1/2 transform -translate-x-1/2 mb-4 w-80 bg-green-500 text-white p-4 rounded-lg shadow-lg transition-transform duration-300">
+      <p>{message}</p>
+      <button onClick={onClose} className="mt-2 text-sm underline">Close</button>
+    </div>
+  );
+};
+
 export default function Form() {
+  const [notification, setNotification] = useState<string>(''); // Tentukan tipe state
   const formik = useFormik({
     initialValues: {
       email: '',
@@ -35,10 +51,11 @@ export default function Form() {
       }, 'HkTk-KgHC9NBwZlCU')
         .then((response: EmailJSResponseStatus) => {
           console.log('SUCCESS!', response.status, response.text);
-          alert('Message sent successfully!');
+          setNotification('Message sent successfully!');
+          formik.resetForm(); // Reset form fields after successful submission
         }, (err) => {
           console.error('FAILED...', err);
-          alert('Failed to send message. Please try again later.');
+          setNotification('Failed to send message. Please try again later.');
         });
     }
   });
@@ -121,6 +138,9 @@ export default function Form() {
           </button>
         </form>
       </div>
+      {notification && (
+        <Notification message={notification} onClose={() => setNotification('')} />
+      )}
     </div>
   );
 }
