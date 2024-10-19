@@ -55,25 +55,25 @@ export default function WebProject() {
       <div className="mb-4">
         <button 
           onClick={() => setSelectedCategory("all")} 
-          className={`text-sm md:text-base lg:text-xl font-semibold mr-2 text-${selectedCategory === "all" ? 'white underline' : 'pink-300'} transition-all`}
+          className={`text-sm md:text-base lg:text-xl font-semibold mr-2 text-${selectedCategory === "all" ? 'pink-300 underline' : 'white'} transition-all`}
         >
           All
         </button>
         <button 
           onClick={() => setSelectedCategory("front-end")} 
-          className={`text-sm md:text-base lg:text-xl font-semibold mr-2 text-${selectedCategory === "front-end" ? 'white underline' : 'pink-300'} transition-all`}
+          className={`text-sm md:text-base lg:text-xl font-semibold mr-2 text-${selectedCategory === "front-end" ? 'pink-300 underline' : 'white'} transition-all`}
         >
           Front-end
         </button>
         <button 
           onClick={() => setSelectedCategory("back-end")} 
-          className={`text-sm md:text-base lg:text-xl font-semibold mr-2 text-${selectedCategory === "back-end" ? 'white underline' : 'pink-300'} transition-all`}
+          className={`text-sm md:text-base lg:text-xl font-semibold mr-2 text-${selectedCategory === "back-end" ? 'pink-300 underline' : 'white'} transition-all`}
         >
           Back-end
         </button>
         <button 
           onClick={() => setSelectedCategory("full-stack")} 
-          className={`text-sm md:text-base lg:text-xl font-semibold text-${selectedCategory === "full-stack" ? 'white underline' : 'pink-300'} transition-all`}
+          className={`text-sm md:text-base lg:text-xl font-semibold text-${selectedCategory === "full-stack" ? 'pink-300 underline' : 'white'} transition-all`}
         >
           Full-stack
         </button>

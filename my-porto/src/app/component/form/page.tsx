@@ -3,15 +3,15 @@ import { useFormik } from 'formik';
 import * as Yup from 'yup';
 import emailjs, { EmailJSResponseStatus } from 'emailjs-com';
 
-// Definisikan tipe untuk props
+
 interface NotificationProps {
   message: string;
-  onClose: () => void; // Fungsi yang tidak menerima argumen dan tidak mengembalikan apa pun
+  onClose: () => void; 
 }
 
 const Notification: React.FC<NotificationProps> = ({ message, onClose }) => {
   return (
-    <div className="fixed bottom-0 left-1/2 transform -translate-x-1/2 mb-4 w-80 bg-green-500 text-white p-4 rounded-lg shadow-lg transition-transform duration-300">
+    <div className="fixed bottom-0 left-1/2 transform -translate-x-1/2 mb-2 w-80 bg-pink-500 text-white p-2 rounded-lg shadow-lg transition-transform duration-300">
       <p>{message}</p>
       <button onClick={onClose} className="mt-2 text-sm underline">Close</button>
     </div>
@@ -19,7 +19,7 @@ const Notification: React.FC<NotificationProps> = ({ message, onClose }) => {
 };
 
 export default function Form() {
-  const [notification, setNotification] = useState<string>(''); // Tentukan tipe state
+  const [notification, setNotification] = useState<string>(''); 
   const formik = useFormik({
     initialValues: {
       email: '',

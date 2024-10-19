@@ -8,9 +8,7 @@ import profileImageThree from "../asset/cia3.jpg";
 import profileImageFour from "../asset/cia4.jpg";
 
 import Link from "next/link";
-import Head from "next/head";
 
-// import AbaoutMe from "./biodata/page";
 import Form from "./component/form/page";
 import WavingHand from "./component/wavinhand/wavingHand";
 import ContactMe from "./component/contact/page";
@@ -72,29 +70,7 @@ export default function Home() {
 
   return (
     <>
-      <Head>
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link
-          rel="preconnect"
-          href="https://fonts.gstatic.com"
-          crossOrigin="anonymous"
-        />
-        <link
-          href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Open+Sans:wght@300;400&display=swap"
-          rel="stylesheet"
-        />
-        <link
-          href="https://cdn.jsdelivr.net/npm/devicon@2.14.0/devicon.min.css"
-          rel="stylesheet"
-        />
-        <link
-          rel="stylesheet"
-          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
-        />
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
-      </Head>
       <div className="justify-center items-center">
-        {/* <Navbar/> */}
         <div className="p-10 md:p-15 lg:p-20 bg-black">
           <div className="flex">
             <div className="grid">
@@ -140,9 +116,6 @@ export default function Home() {
           </div>
         </div>
         <MyPortofolio />
-        {/* <div className="py-6 md:py-8 lg:py-10">
-        <AbaoutMe />
-        </div> */}
        
         
         <Form />
