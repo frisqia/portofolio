@@ -20,7 +20,7 @@ export default function AboutMe() {
         {["aboutme", "education", "experience", "skill"].map((section) => (
           <button
             key={section}
-            className={`px-3 py-2 text-sm md:text-base lg:text-xl font-semibold ${
+            className={`px-2 py-2 text-xs md:text-base lg:text-xl font-semibold ${
               activeSection === section ? "text-white border-b-2 border-white" : "text-pink-300"
             } hover:text-white hover:border-b-2 hover:border-white transition-colors`}
             onClick={() => setActiveSection(section)}
