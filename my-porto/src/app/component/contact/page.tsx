@@ -6,18 +6,7 @@ export default function ContactMe() {
         {/* <h3 className="text-2xl md:text-4xl xl:text-5xl">Find me!</h3> */}
         <div className="flex flex-wrap gap-2">
           {/* email */}
-          <Link href="mailto:frifani123@gmail.com">
-            <button className="w-7 h-7 md:w-9 md:h-9 lg:w-11 lg:h-11 mt-4 p-2 bg-pink-500 hover:bg-pink-600 text-white rounded-full flex justify-center items-center transition duration-300 hover:scale-110">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 24 24"
-                fill="currentColor"
-                className="w-4 h-4 md:w-5 md:h-5 lg:w-6 lg:h-6 fill-current text-white"
-              >
-                <path d="M1.5 4.5A3 3 0 0 1 4.5 1.5h15a3 3 0 0 1 3 3v15a3 3 0 0 1-3 3h-15a3 3 0 0 1-3-3v-15zm17.25 1.5h-12l6 4.5 6-4.5zm1.5 2.25-6.29 4.717a1.5 1.5 0 0 1-1.71 0L6 8.25v10.5h12V8.25z" />
-              </svg>
-            </button>
-          </Link>
+         
         
           {/* linkedin */}
           <Link
