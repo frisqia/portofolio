@@ -93,7 +93,7 @@ export default function WebProject() {
             />
             <div className="absolute inset-0 flex flex-col justify-center items-center text-center rounded-xl text-white bg-black bg-opacity-75 opacity-0 hover:opacity-100 transition-opacity duration-300">
               <h3 className="font-bold text-lg">{item.name}</h3>
-              <p className="p-2">
+              <p className="p-2 text-xs">
                 {Array.isArray(item.description)
                   ? item.description.join(" ")
                   : item.description}
