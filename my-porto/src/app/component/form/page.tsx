@@ -2,6 +2,8 @@ import React, { useState } from "react";
 import { useFormik } from 'formik';
 import * as Yup from 'yup';
 import emailjs, { EmailJSResponseStatus } from 'emailjs-com';
+import MixPhoto from "@/app/animation/mixphoto/page";
+
 
 
 interface NotificationProps {
@@ -64,10 +66,14 @@ export default function Form() {
     <div className="p-10 md:p-15 lg:p-20 bg-gray-100 rounded-lg shadow-lg">
       <h1 className="text-2xl md:text-3xl lg:text-4xl font-lilita mb-4 text-center">Any Question?</h1>
       <div className="flex flex-col md:flex-row">
-        <div className="flex-1 mb-6 md:mr-4">
+      <div className="flex-1 mb-6 md:mr-4">
           <p className="text-xs md:text-sm lg:text-base text-gray-700">
             I'm glad you've visited my personal portfolio website! If you have any questions, suggestions, or would like to collaborate, please feel free to contact me through this form. I will endeavor to reply to your message as soon as possible.
           </p>
+          {/* MixPhoto hanya ditampilkan di layar besar */}
+          <div className="hidden md:block mt-4">
+            <MixPhoto />
+          </div>
         </div>
         <form onSubmit={formik.handleSubmit} className="flex-1 space-y-4">
           <div>
