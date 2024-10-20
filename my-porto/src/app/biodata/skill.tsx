@@ -6,7 +6,7 @@ export default function MySkill(){
         <>
         <div className="px-20">
 
-        <div className="grid p-4">
+        <div className="grid p-5 ml-5">
           <p className="font-Qwitcher text-2xl">Programming Language :</p>
           <div className="p-4 flex">
             <svg
