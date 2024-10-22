@@ -4,7 +4,7 @@ export default function MyExperience() {
   // State untuk menyimpan pengalaman yang dipilih
   const [selectedExperience, setSelectedExperience] = useState<number | null>(null);
 
-  // Data pengalaman kerja
+  // experience data
   const experiences = [
     {
       company: "PT. Metiska Farma",
@@ -70,14 +70,14 @@ export default function MyExperience() {
             <React.Fragment key={index}>
               {/* Baris untuk Nama Company dan Period */}
               <tr onClick={() => handleExperienceClick(index)} style={{ cursor: "pointer" }}>
-                <td className="py-3 px-4 text-lg font-semibold text-left">{exp.company}<br /><span className="italic">{exp.position}</span></td>
-                <td className="py-3 px-4 text-lg font-semibold text-right">{exp.period}</td>
+                <td className="py-3 px-4 text-xs md:text-base lg:text-lg font-semibold text-left">{exp.company}<br /><span className="italic">{exp.position}</span></td>
+                <td className="py-3 px-4 text-xs md:text-base lg:text-lg font-semibold text-right">{exp.period}</td>
               </tr>
               
               {/* Deskripsi pengalaman */}
               {selectedExperience === index && (
                 <tr>
-                  <td colSpan={2} className="py-3 px-4 text-sm md:text-lg lg:text-xlanimate-fadeIn">
+                  <td colSpan={2} className="py-3 px-4 text-xs md:text-lg lg:text-xlanimate-fadeIn">
                     <ul className="list-disc pl-5">
                       {exp.description.map((desc, idx) => (
                         <li key={idx}>{desc}</li>
