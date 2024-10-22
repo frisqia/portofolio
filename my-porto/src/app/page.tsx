@@ -12,9 +12,6 @@ export default function Home() {
     <>
       <div className="justify-center items-center">
         <div className="p-10 md:p-15 lg:p-20 bg-black">
-        <div className=" p-4 flex justify-center md:hidden md:block">
-                  <PhotoBox />
-                </div>
           <div className="flex flex-col md:flex-row">
             <div className="grid">
               <div className="flex animate-fadeIn text-base md:text-3xl xl:text-5xl">
@@ -28,8 +25,8 @@ export default function Home() {
               </div>
 
               <p className="text-sm md:text-base lg:text-2xl text-white animate-fadeInTwo">
-                I'm interested in software engineering, especially in the field of Front-end Developer,
-                user interfaces and web application
+                I'm interested in software engineering, especially in the field
+                of Front-end Developer, user interfaces and web application
               </p>
 
               <ContactMe />
@@ -47,15 +44,18 @@ export default function Home() {
 
                 {/* Show PhotoBox only on small screens and larger */}
                 <div className="hidden lg:hidden md:flex ml-4">
-              <PhotoBox />
-            </div>
+                  <PhotoBox />
+                </div>
               </div>
             </div>
 
             {/* Hide PhotoBox on small screens */}
-            <div className="lg:flex hidden md:hidden">
+            <div className="lg:grid hidden md:hidden">
               <PhotoBox />
             </div>
+          </div>
+          <div className=" p-4 flex justify-center md:hidden md:block">
+            <PhotoBox />
           </div>
         </div>
 
