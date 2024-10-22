@@ -15,13 +15,13 @@ export default function Education() {
               <Image
                 src={revoU}
                 alt="revoU"
-                className="w-[50px] h-[50px] rounded-full"
+                className="w-[30px] h-[30px] md:w-[40px] md:h-[40px] lg:w-[50px] lg:h-[50px] rounded-full"
               ></Image>
-              <p className="text-base md:text-xl lg:text-2xl font-bold">RevoU Indonesia</p>
+              <p className="text-xs md:text-xl lg:text-2xl font-bold">RevoU Indonesia</p>
             </div>
-            <p className="text-right text-base md:text-xl lg:text-2xl  ">January, 2024 – August 2024</p>
+            <p className="text-right text-sm md:text-xl lg:text-2xl  ">January, 2024 – August 2024</p>
           </div>
-          <div className="grid px-20 text-sm md:text-lg lg:text-xl">
+          <div className="grid px-5 text-xs md:text-lg lg:text-xl">
             <p>
               <i>
                 <u>Fullstack Software Engineering</u>
@@ -50,15 +50,15 @@ export default function Education() {
               <Image
                 src={school}
                 alt="school"
-                className="w-[50px] h-[50px] rounded-full"
+                className="w-[30px] h-[30px] md:w-[40px] md:h-[40px] lg:w-[50px] lg:h-[50px] rounded-full"
               ></Image>
-              <p className="text-base md:text-xl lg:text-2xl  font-bold">SMA Bina Pendidikan</p>
+              <p className="text-sm md:text-xl lg:text-2xl  font-bold">SMA Bina Pendidikan</p>
             </div>
 
-            <p className="text-right text-base md:text-xl lg:text-2xl ">April, 2015 – July 2017</p>
+            <p className="text-right text-sm md:text-xl lg:text-2xl ">April, 2015 – July 2017</p>
           </div>
 
-          <p className="px-20 text-xs md:text-sm lg:text-base">
+          <p className="px-5 text-xs md:text-sm lg:text-base">
             <i>
               <u>Major : Ilmu pengetahuan ALam (Biologi)</u>
             </i>
