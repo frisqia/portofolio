@@ -22,9 +22,9 @@ export default function MyPortofolio() {
   return (
     <>
       <div className="flex flex-col justify-center items-center p-6 md:p-8 lg:p-10 bg-black text-white min-h-screen">
-        <h1 className="text-base md:text-xl lg:text-3xl font-bold">My Portfolio</h1>
+        <h1 className="text-xs md:text-xl lg:text-3xl font-bold">My Portfolio</h1>
         <br />
-        <p className="text-base md:text-xl lg:text-2xl text-center max-w-4xl">
+        <p className="text-xsmd:text-xl lg:text-2xl text-center max-w-4xl">
           This is my previous project and work. My portfolio covers several areas of programming languages, graphic design, code writing, digital marketing, and many more. It provides examples of work completed for clients and personal projects, offering insight into my skills and work style to help you in your upcoming endeavors.
         </p>
         
