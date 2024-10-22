@@ -6,7 +6,7 @@ export default function AboutMeContent(){
 return(
     <>
     <div>
-    <p className="animate-fall text-base md:text-xl lg:text-2xl ">
+    <p className="animate-fall text-xs md:text-xl lg:text-2xl ">
           I am a RevoU bootcamp graduate with a strong interest in software
           engineering, and I am excited to start my career as a Front-End
           Developer. Despite my different professional background, through my
