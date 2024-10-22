@@ -16,7 +16,7 @@ export default function AboutMe() {
       <div className="flex flex-col items-center">
       {/* Navigation Tabs */}
     
-      <div className="flex justify-center items-center space-x-6 text-white  rounded-lg p-1 w-full max-w-lg">
+      <div className="flex justify-center items-center space-x-4 text-white  rounded-lg p-1 w-full max-w-lg">
         {["aboutme", "education", "experience", "skill"].map((section) => (
           <button
             key={section}
@@ -35,28 +35,28 @@ export default function AboutMe() {
         {/* Conditional Rendering of Sections */}
         {activeSection === "aboutme" && (
           <section id="aboutme">
-            <h1 className="text-3xl md:text-5xl lg:text-7xl font-lilita">About Me</h1>
+            <h1 className="text-2xl md:text-4xl lg:text-5xl font-lilita">About Me</h1>
             <AboutMeContent />
           </section>
         )}
 
         {activeSection === "education" && (
           <section id="education">
-            <h1 className="text-3xl md:text-5xl lg:text-7xl font-lilita">Education</h1>
+            <h1 className="text-2xl md:text-4xl lg:text-5xl font-lilita">Education</h1>
             <Education />
           </section>
         )}
 
         {activeSection === "experience" && (
           <section id="experience">
-            <h2 className="text-3xl md:text-5xl lg:text-7xl font-lilita">Experience</h2>
+            <h2 className="text-2xl md:text-4xl lg:text-5xl font-lilita">Experience</h2>
             <MyExperience />
           </section>
         )}
 
         {activeSection === "skill" && (
           <section id="skill">
-            <h2 className="  flex justify-center p-2 text-3xl md:text-5xl lg:text-7xl font-lilita">Skills</h2>
+            <h2 className="  flex justify-center p-2 text-2xl md:text-4xl lg:text-5xl  font-lilita">Skills</h2>
             <MySkill />
           </section>
         )}
