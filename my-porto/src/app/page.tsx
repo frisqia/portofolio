@@ -38,7 +38,7 @@ export default function Home() {
                     target="_blank"
                     rel="noopener noreferrer"
                   >
-                    Check My
+                    Check My CV
                   </Link>
                 </button>
 
@@ -62,10 +62,10 @@ export default function Home() {
         <MyPortofolio />
 
         <Form />
-
+{/* 
         <footer className="bg-black text-white text-center p-5">
           <p>&copy; 2024 Frisqia Fatmalaningsih. All rights reserved.</p>
-        </footer>
+        </footer> */}
       </div>
     </>
   );
