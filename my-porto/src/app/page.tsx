@@ -38,7 +38,7 @@ export default function Home() {
                     target="_blank"
                     rel="noopener noreferrer"
                   >
-                    Check My CV
+                  My CV
                   </Link>
                 </button>
 

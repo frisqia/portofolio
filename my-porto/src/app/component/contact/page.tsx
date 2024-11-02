@@ -42,7 +42,7 @@ export default function ContactMe() {
           </Link>
           {/* ig */}
           <Link
-            href="https://www.instagram.com/xiaocia__/"
+            href="https://www.instagram.com/frifani__/"
             target="_blank"
             rel="noopener noreferrer"
           >
@@ -57,7 +57,7 @@ export default function ContactMe() {
             </button>
           </Link>
           {/* threads */}
-          <Link href="https://www.threads.net/@xiaocia__">
+          <Link href="https://www.threads.net/@frifani__">
             <button className="w-7 h-7 md:w-9 md:h-9 lg:w-11 lg:h-11 mt-4 p-2 bg-pink-500 hover:bg-pink-600 text-white rounded-full flex justify-center items-center transition duration-300 hover:scale-110">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
