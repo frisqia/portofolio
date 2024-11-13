@@ -4,20 +4,7 @@ import WebProject from "./webProject";
 import AboutMe from "@/app/biodata/page";
 
 export default function MyPortofolio() {
-  const [showSecondParagraph, setShowSecondParagraph] = useState(false);
-  const [firstBlink, setFirstBlink] = useState(true);
-  const [secondBlink, setSecondBlink] = useState(false);
   const [activeSection, setActiveSection] = useState("project");
-
-  useEffect(() => {
-    const timer = setTimeout(() => {
-      setFirstBlink(false);
-      setShowSecondParagraph(true);
-      setSecondBlink(true);
-    }, 4000);
-
-    return () => clearTimeout(timer);
-  }, []);
   
   return (
     <>
