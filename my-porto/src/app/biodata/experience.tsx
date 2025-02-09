@@ -7,17 +7,24 @@ export default function MyExperience() {
   // experience data
   const experiences = [
     {
+      company: "PT. Ikapharmindo Putramas, Tbk",
+      period: "December 2024 - currently",
+      position: "Administration - Farmasi",
+      description:[
+        "Data Entry & Accuracy: Accurately inputting data into the SAP system to ensure completeness and correctness of information, reducing input errors and streamlining administrative processes.",
+        "Document Review & Validation: Reviewing and verifying Purchase Order (PO) and Blanket Purchase Order (BPO) documents related to packaging and processing to ensure completeness and compliance with company standards. Improved document processing efficiency by 96% through stricter validation.",
+        "Process Improvement: Contributing to document revision and workflow optimization, resulting in a more structured and efficient approval and processing system.",
+        "Analytical Thinking & Problem-Solving: Analyzing administrative data to enhance operational efficiency. More accurate data analysis has enabled better packaging and processing planning."
+      ]
+    },
+    {
       company: "PT. Metiska Farma",
       period: "August 2021 - June 2024",
       position: "Operator Packing - Farmasi",
       description: [
-        "Processed up to 250 boxes of medicine daily, meeting company SOP standards.",
-        "Created and checked daily reports on man hours and job sheets, and input daily reports (Portal, Mebrow, Excel).",
-        "Operated machinery (Delifolfold, Hitachi Inkjet, Ux Inkjet) to support the production process.",
-        "Regularly contributed to process improvement through the suggestion system every six months.",
-        "Managed product returns, waste disposal, and expired product updates in the production area.",
-        "Adaptability: Proactively served as backup production admin when needed, including inputting work orders (WO), managing employee leave and permissions, and updating and revising document validations according to company standards (CPOB/CPOTB/K3/SJH and others). Updated ATK stock and monitored the expiration temperature in each production room.",
-        "Flexibility: Performed various production administrative tasks, ensuring smooth team operations during staff shortages or when needed.",
+        "Process Improvement: Implemented a significant efficiency improvement in the packaging process for the Xeradin product, resulting in a 25,67% cost-saving and reducing packaging time per box from 3 hours to just 2.23 hours. . This initiative was part of the company’s suggestion system, where I regularly contributed process improvement ideas every six months.",
+        "Adaptability: Took on additional responsibilities by serving as a backup production admin when needed. My tasks included inputting work orders (WO), managing employee leave and permissions, and updating document validations in compliance with company standards (CPOB/CPOTB/K3/SJH). This flexibility helped ensure continuity and adherence to regulatory requirements.",
+        "Operational Efficiency: Managed product returns, waste disposal, and expired product tracking, which minimized waste and ensured a more organized production area."
       ],
     },
     {
@@ -25,12 +32,10 @@ export default function MyExperience() {
       period: "March 2020 - August 2021",
       position: "Sales Admin Online Shop - E-Commerce",
       description: [
-        "Processed up to 600 orders and created invoices daily.",
-        "Handled 900 chats daily on WhatsApp and marketplaces like Tokopedia, Shopee, Bukalapak, and the company website.",
-        "Customer Service: Negotiated prices with customers and suppliers, provided customer service both online and offline, ensuring customer satisfaction and smooth transactions.",
-        "Time Management: Managed product stock, updated daily reports to the director via WhatsApp group, and ensured orders were processed quickly, meeting deadlines.",
-        "Updated and checked online product markets, uploaded, and edited photos with descriptions on marketplaces.",
-        "Attention to Detail: Ensured the product information uploaded to marketplaces was accurate and complete, including product descriptions and images.",
+        "Sales Growth: Successfully boosted flash sale performance on Shopee, increasing order volume from 600 to 1,000 orders by improving response rates. Achieved a response rate of 99% (up from 75%), which helped capture more customer interest and maximize order conversions during peak sales events",
+        "High-Volume Order Processing: Efficiently managed up to 600 regular orders daily, while handling 900 customer chats across platforms like Tokopedia, Shopee, Bukalapak, and the company website. This ensured quick, accurate order processing and improved overall customer satisfaction.",
+        "Customer Relationship Management: Negotiated with customers and suppliers, provided excellent customer service online and offline, and built rapport that led to high customer retention and positive reviews.",
+        "Time Management & Reporting: Maintained accurate stock updates and sent daily reports to the director. By prioritizing tasks effectively, I ensured that orders were processed on time, even during high-traffic periods."
       ],
     },
     {
@@ -38,9 +43,8 @@ export default function MyExperience() {
       period: "April 2018 - October 2018",
       position: "Operator Insert Alpha - Electronic",
       description: [
-        "Inserted cables into housing/material, meeting the target of 8,000 cables per day according to company operational standards.",
-        "Efficiency: Consistently met high daily production targets while maintaining product quality.",
-        "Inventory Management: Checked and counted product and material stocks monthly to ensure material availability and smooth production.",
+       "Consistent Productivity: Consistently met the target of inserting 8,000 cables per day while maintaining product quality, demonstrating strong efficiency and attention to detail in a high-paced production environment.",
+       "Inventory Accuracy: Conducted monthly checks on product and material stocks to ensure sufficient supply for continuous production, minimizing downtime and enhancing production flow."
       ],
     },
     {
@@ -48,10 +52,9 @@ export default function MyExperience() {
       period: "October 2017 - March 2018",
       position: "Operator Packing - Farmasi",
       description: [
-        "Packed 700 boxes per day, meeting company SOP standards.",
-        "Leadership: As team leader, I was responsible for organizing team work, providing instructions, and ensuring that all team members met their targets.",
-        "Problem-Solving: Managed the return of damaged goods, taking necessary actions to prevent the same mistakes from recurring.",
-        "Created daily reports and ensured the workspace was clean before and after work.",
+        "Leadership & Team Coordination: As a team leader, I organized work assignments and motivated team members to achieve daily production goals of 700 boxes, which contributed to maintaining production efficiency.",
+        "Quality Control & Problem Solving: Managed the return of defective goods, analyzed root causes, and implemented measures to prevent future issues. This proactive approach helped reduce the rate of errors and improved product quality.",
+        "Daily Reporting & Maintenance: Ensured workspace cleanliness and safety by establishing a routine of daily reporting and end-of-day clean-up, which contributed to a safer and more organized working environment."
       ],
     },
   ];

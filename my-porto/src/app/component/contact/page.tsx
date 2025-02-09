@@ -14,7 +14,7 @@ export default function ContactMe() {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <button className="w-7 h-7 md:w-9 md:h-9 lg:w-11 lg:h-11 mt-4 p-2 bg-pink-500 hover:bg-pink-600 text-white rounded-full  flex justify-center items-center transition duration-300 hover:scale-110">
+            <button className="w-7 h-7 md:w-9 md:h-9 lg:w-11 lg:h-11 mt-4 p-2 bg-gradient-to-r bg-linear-65 from-pink-500 to-purple-400  hover:bg-pink-600 text-white rounded-full  flex justify-center items-center transition duration-300 hover:scale-110">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 448 512"
@@ -30,7 +30,7 @@ export default function ContactMe() {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <button className="w-7 h-7 md:w-9 md:h-9 lg:w-11 lg:h-11 mt-4 p-2 bg-pink-500 hover:bg-pink-600 text-white rounded-full flex justify-center items-center transition duration-300 hover:scale-110">
+            <button className="w-7 h-7 md:w-9 md:h-9 lg:w-11 lg:h-11 mt-4 p-2 bg-gradient-to-r bg-linear-65 from-pink-500 to-purple-400  hover:bg-pink-600 text-white rounded-full flex justify-center items-center transition duration-300 hover:scale-110">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 24 24"
@@ -46,7 +46,7 @@ export default function ContactMe() {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <button className="w-7 h-7 md:w-9 md:h-9 lg:w-11 lg:h-11 mt-4 p-2 bg-pink-500 hover:bg-pink-600 text-white rounded-full flex justify-center items-center transition duration-300 hover:scale-110">
+            <button className="w-7 h-7 md:w-9 md:h-9 lg:w-11 lg:h-11 mt-4 p-2 bg-gradient-to-r bg-linear-65 from-pink-500 to-purple-400  hover:bg-pink-600 text-white rounded-full flex justify-center items-center transition duration-300 hover:scale-110">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 448 512"
@@ -58,7 +58,7 @@ export default function ContactMe() {
           </Link>
           {/* threads */}
           <Link href="https://www.threads.net/@frifani__">
-            <button className="w-7 h-7 md:w-9 md:h-9 lg:w-11 lg:h-11 mt-4 p-2 bg-pink-500 hover:bg-pink-600 text-white rounded-full flex justify-center items-center transition duration-300 hover:scale-110">
+            <button className="w-7 h-7 md:w-9 md:h-9 lg:w-11 lg:h-11 mt-4 p-2 bg-gradient-to-r bg-linear-65 from-pink-500 to-purple-400  hover:bg-pink-600 text-white rounded-full flex justify-center items-center transition duration-300 hover:scale-110">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 20 20"
@@ -79,7 +79,7 @@ export default function ContactMe() {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <button className="w-7 h-7 md:w-9 md:h-9 lg:w-11 lg:h-11 mt-4 p-2 bg-pink-500 hover:bg-pink-600 text-white rounded-full  flex justify-center items-center transition duration-300 hover:scale-110">
+            <button className="w-7 h-7 md:w-9 md:h-9 lg:w-11 lg:h-11 mt-4 p-2 bg-gradient-to-r bg-linear-65 from-pink-500 to-purple-400  hover:bg-pink-600 text-white rounded-full  flex justify-center items-center transition duration-300 hover:scale-110">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 320 512"
@@ -95,7 +95,7 @@ export default function ContactMe() {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <button className="w-7 h-7 md:w-9 md:h-9 lg:w-11 lg:h-11 mt-4 p-2 bg-pink-500 hover:bg-pink-600 text-white rounded-full  flex justify-center items-center transition duration-300 hover:scale-110">
+            <button className="w-7 h-7 md:w-9 md:h-9 lg:w-11 lg:h-11 mt-4 p-2 bg-gradient-to-r bg-linear-65 from-pink-500 to-purple-400  hover:bg-pink-600 text-white rounded-full  flex justify-center items-center transition duration-300 hover:scale-110">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 24 24"
