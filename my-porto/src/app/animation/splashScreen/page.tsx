@@ -2,7 +2,7 @@
 import { useState, useEffect } from "react";
 
 interface SplashScreenProps {
-  onFinish: () => void;
+  onFinish?: () => void;
 }
 
 const SplashScreen: React.FC<SplashScreenProps> = ({ onFinish }) => {
